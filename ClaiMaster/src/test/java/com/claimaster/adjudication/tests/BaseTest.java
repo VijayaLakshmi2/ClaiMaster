@@ -17,10 +17,10 @@ public class BaseTest {
 	}
 	
 	
-	/* @AfterMethod
-	public void tearDown() { 
-		driver.quit(); 
-		
-	}*/
+//	@AfterMethod
+//	public void tearDown() { 
+//		driver.quit(); 
+//		
+//	}
 
 }

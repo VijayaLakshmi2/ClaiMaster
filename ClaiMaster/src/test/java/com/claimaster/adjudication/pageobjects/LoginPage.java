@@ -35,7 +35,7 @@ public class LoginPage {
 		return this;
 	}
 
-	public WebDriver Logintoapplication(String Username, String Password) {
+	public WebDriver Logintoapplication(String Username, String Password) throws Exception {
 		wait=new WebDriverWait(driver,60);
 		wait.until(ExpectedConditions.elementToBeClickable(username)).click();
 		driver.findElement(username).sendKeys(Username);
@@ -43,6 +43,8 @@ public class LoginPage {
 		driver.findElement(password).sendKeys(Password);
 		wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
 		
+		HomePage homePage=new HomePage(driver);
+		homePage.navigatedToHomePage();
 		return driver;
 	}
 }
