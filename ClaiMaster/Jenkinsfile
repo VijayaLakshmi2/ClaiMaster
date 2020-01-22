@@ -8,7 +8,7 @@ pipeline {
 
                                                 steps {
 
-                                                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'default', submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Madhu5555/ProviderVilla.git']]])
+                                                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'default', submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/VijayaLakshmi2/ClaiMaster.git']]])
 
                                                 }
 
